@@ -1,15 +1,15 @@
 .buttons {
-    display: inline-grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    gap: 30px;
-    margin: 100px 700px;
+  display: inline-grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 30px;
+  margin: 100px 700px;
 }
 
 button {
-    padding: 20px;
+  padding: 20px;
 }
 
 #displaytext {
-   grid-column: 1/5;
-   padding: 20px;
+  grid-column: 1/5;
+  padding: 20px;
 }
