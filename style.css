@@ -28,3 +28,10 @@ button {
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
 }
+
+button:hover {
+  background-color: rgb(245, 245, 245);
+  box-shadow: none;
+  scale: 1.15;
+}
+
