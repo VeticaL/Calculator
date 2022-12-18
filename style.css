@@ -13,3 +13,7 @@ button {
   grid-column: 1/5;
   padding: 20px;
 }
+
+#btn0 {
+  grid-column: 1/3;
+}

@@ -15,8 +15,10 @@ const btnSub = document.getElementById("btnSub");
 const btnDiv = document.getElementById("btnDiv");
 const btnEqual = document.getElementById("btnEqual");
 const displayText = document.getElementById("displaytext");
+const btndot = document.getElementById("btndot");
+const btnPlusMinus = document.getElementById("btnPlusMinus");
+const btnPercent = document.getElementById("btnPercent");
 
-let string = "";
 
 btn1.addEventListener("click", calculate);
 btn2.addEventListener("click", calculate);
@@ -34,13 +36,26 @@ btnAdd.addEventListener("click", calculate);
 btnSub.addEventListener("click", calculate);
 btnDiv.addEventListener("click", calculate);
 btnEqual.addEventListener("click", calculate);
+btndot.addEventListener("click", calculate);
+btnPlusMinus.addEventListener("click", calculate);
+btnPercent.addEventListener("click", calculate);
+
+
+let string = "";
+
 
 function calculate() {
   if (this.innerHTML == "=") {
     string = eval(string);
     displayText.value = string;
-  } else if (this.innerHTML == "C") {
+  } else if (this.innerHTML == "AC") {
     string = "";
+    displayText.value = string;
+  } else if (this.innerHTML == "+/-") {
+      string = string * -1;
+      displayText.value = string;
+  } else if (this.innerHTML == "%") {
+    string = string + this.innerHTML;
     displayText.value = string;
   } else {
     string = string + this.innerHTML;
