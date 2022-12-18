@@ -38,6 +38,7 @@ btnEqual.addEventListener("click", calculate);
 function calculate() {
   if (this.innerHTML == "=") {
     string = eval(string);
+    displayText.value = string;
   } else if (this.innerHTML == "C") {
     string = "";
     displayText.value = string;
