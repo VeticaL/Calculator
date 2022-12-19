@@ -19,7 +19,6 @@ const btndot = document.getElementById("btndot");
 const btnPlusMinus = document.getElementById("btnPlusMinus");
 const btnPercent = document.getElementById("btnPercent");
 
-
 btn1.addEventListener("click", calculate);
 btn2.addEventListener("click", calculate);
 btn3.addEventListener("click", calculate);
@@ -40,9 +39,7 @@ btndot.addEventListener("click", calculate);
 btnPlusMinus.addEventListener("click", calculate);
 btnPercent.addEventListener("click", calculate);
 
-
 let string = "";
-
 
 function calculate() {
   if (this.innerHTML == "=") {
@@ -52,8 +49,8 @@ function calculate() {
     string = "";
     displayText.value = string;
   } else if (this.innerHTML == "+/-") {
-      string = string * -1;
-      displayText.value = string;
+    string = string * -1;
+    displayText.value = string;
   } else if (this.innerHTML == "%") {
     string = string + this.innerHTML;
     displayText.value = string;
@@ -62,3 +59,29 @@ function calculate() {
     displayText.value = string;
   }
 }
+
+window.addEventListener("keydown", function (e) {
+  if (e.key == "=" || e.key == "Enter") {
+    string = eval(string);
+    displayText.value = string;
+  } else if (
+    e.key == "1" ||
+    e.key == "2" ||
+    e.key == "3" ||
+    e.key == "4" ||
+    e.key == "5" ||
+    e.key == "6" ||
+    e.key == "7" ||
+    e.key == "8" ||
+    e.key == "9" ||
+    e.key == "0" ||
+    e.key == "+" ||
+    e.key == "-" ||
+    e.key == "*" ||
+    e.key == "/" ||
+    e.key == "."
+  ) {
+    string = string + e.key;
+    displayText.value = string;
+  }
+});
