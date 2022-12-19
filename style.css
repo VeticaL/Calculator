@@ -11,9 +11,10 @@
   grid-column: 1/5;
   padding: 22px;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
   border-radius: 50px;
   margin: 8px;
+  outline: none;
 }
 
 #btnEqual {
@@ -27,7 +28,7 @@ button {
   border: none;
   background-color: white;
   border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
   outline: none;
 }
 
@@ -40,4 +41,3 @@ button:hover {
 input {
   font-size: medium;
 }
-

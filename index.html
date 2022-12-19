@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   </head>
   <body>
     <div class="buttons">
-      <input type="text" id="displaytext"/>
+      <input type="text" id="displaytext" />
       <button id="btnC">AC</button>
       <button id="btnPlusMinus">+/-</button>
       <button id="btnPercent">%</button>
@@ -30,6 +31,15 @@
       <button id="btndot">.</button>
       <button id="btnEqual">=</button>
     </div>
+    <footer>
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Vertical
+      </p>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
