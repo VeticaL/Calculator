@@ -28,6 +28,7 @@ button {
   background-color: white;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 8px;
+  outline: none;
 }
 
 button:hover {
@@ -35,6 +36,7 @@ button:hover {
   box-shadow: none;
   scale: 1.15;
 }
+
 input {
   font-size: medium;
 }
